@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramiz - Developer portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav>
+            <input type="checkbox" id="check" onclick="showSideBar()">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+             
+
+            <button action="/" data-text="Awesome" class="button" id="effecthover">
+                <span class="actual-text">&nbsp;RAMIZ&nbsp;BELIM&nbsp;</span>
+                <span class="hover-text" aria-hidden="true">&nbsp;RAMIZ&nbsp;BELIM&nbsp;</span>
+            </button>
+
+            <ul id="sidebar" onclick="showSideBar()">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="\">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Ramiz</span></div>
+                <div>and I am a passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+
+                <div id="wrap">
+                    <div> <a class="btn-slide" href="https://drive.google.com/file/d/1xW-UUDZkYy9AO7QZzwyZ6RvRI2Cs8HBU/view?usp=sharing">
+                            <span class="circle">
+                                <i style="font-size:24px; padding-top: 8px;" class="fa">&#xf019;</i>
+                            </span>
+
+                            <span class="title">Resume</span>
+                            <span class="title title-hover">Download</span>
+                        </a>
+                    </div>
+
+                    <div class="github"> <a class="btn-slide" href="https://github.com/ramizbelim">
+                            <span class="circle">
+                                <i style="font-size:30px; padding-left: 7px;" class="fa">&#xf09b;</i>
+                            </span>
+                            <span class="title">Github</span>
+                            <span class="title title-hover">Visit Github</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-fluid">
+                <img src="image/p3.png" alt="">
+            </div>
+        </section>
+        <hr class="section-line" style="border:0.5px solid rgb(196, 192, 192)">
+
+        <section id="about" class="about">
+            <div class="leftabout">
+            
+                <h1 style="text-align: center; ">LET ME INTRODUCE <span class="purple">MY SELF</span></h1>
+            
+
+                <div class="about-description" style="width: 70%; text-align: center;justify-content: center; margin-left: 10%; text-align: justify;">
+                    <p class="home-about-body">
+                        Hello there! My name is <i><b class="purple">Ramiz Belim </b></i>, and I am thrilled to
+                        welcome you to my website.
+                        <br>
+                        <br>
+                        I have recently completed my <i><b class="purple">3 Month internship at Infolabz</b></i>.
+                        <br>
+                        <br>
+                        As a passionate programmer, I have dedicated my career to the world of coding and
+                        software development.
+                        <br>
+                        <br>
+                        My area of expertise lies in <i><b class="purple">Python and Django</b></i>, two powerful
+                        tools that enable me to
+                        bring innovative solutions to life.
+                        <br>
+                        <br>
+                        I pride myself on writing <i><b class="purple">clean, efficient, and scalable code</b></i>
+                        that not only meets the requirements but also exceeds expectations.</h3>
+                        <br>
+                        <br>
+                        Whether it's developing web applications, building robust APIs, or creating custom
+                        software solutions, I approach every project with enthusiasm and a keen eye for detail.
+                        <br>
+                        <br>
+                        Keeping up with the latest industry trends and continuously expanding my knowledge is
+                        something I prioritize to ensure that I deliver cutting-edge solutions to my clients.
+                    </p>
+                </div>
+            </div>
+
+            <div class="myAvatar">
+                <img src="image/avatar.svg" alt="photo">
+            </div>
+
+
+        </section>
+        <hr class="section-line">
+        <section id="contact" class="section-padding">
+            <div>
+                <h1 style="align-items: center; text-align: center; padding-top: 40px;">FEEL FREE TO <span class="purple"> CONNECT</span>
+                    WITH ME</h1>
+            </div>
+            <div class="container bg-black pt-5">
+                <div class="row px-3 pb-2">
+                    <div class="col-sm-3 text-center mb-3">
+                        <i class="far fa-2x fa-duotone fa-envelope mb-3 text-primary"></i>
+                        <!-- <i class="far fa-2x fa-envelope mb-3 text-primary"></i> -->
+                        <h4 class="font-weight-bold">Email</h4>
+                        <p>ramizbelim0@gmail.com</p>
+                    </div>
+                    <div class="col-sm-3 text-center mb-3">
+                        <a href="https://www.linkedin.com/in/ramiz-belim"><i
+                                class="fab fa-2x fa-linkedin-in mb-3 text-primary"></i>
+                            <h4 class="font-weight-bold" style="text-decoration: none; color: white;">Linkdin</h4>
+                            <p style="text-decoration: none; color: white;">ramiz-belim</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 text-center mb-3">
+                        <a href="https://instagram.com/ramizbelim1406?igshid=MzNlNGNkZWQ4Mg=="><i
+                                class="fab fa-2x fa-instagram mb-3 text-primary"></i>
+                            <h4 class="font-weight-bold" style="text-decoration: none; color: white;">Instagram</h4>
+                            <p style="text-decoration: none; color: white;">ramizbelim1406</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 text-center mb-3">
+                        <i class="fas fa-2x fa-map-marker-alt mb-3 text-primary"></i>
+                        <h4 class="font-weight-bold">Address</h4>
+                        <p>Amreli</p>
+                    </div>
+                </div>
+
+
+        </section>
+
+    </main>
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="footer-copyright col-md-12">
+                <h3>Design & Developed By Ramiz Belim</h3>
+            </div>
+            <div class="footer-copyright col-md-12">
+                <h3> Copyright &#169; All rights reserved</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Python Developer', 'Web Developer', 'BackEnd Developer', 'Freelancer'],
+            typeSpeed: 50,
+        });
+
+        let show = false;
+
+function showSideBar() {
+    show = !show; // Toggle the value of the 'show' variable
+
+    let sidebar = document.getElementById('sidebar');
+    if (show) {
+        sidebar.classList.add('show');
+    } else {
+        sidebar.classList.remove('show');
+    }
+}
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
